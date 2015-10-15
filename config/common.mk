@@ -117,6 +117,10 @@ vendor/XPe/prebuilt/chromium/libwebviewchromium_plat_support.so:system/lib/libwe
 PRODUCT_COPY_FILES += \
     vendor/XPe/prebuilt/common/etc/hosts:system/etc/hosts
 
+# Copy over added mimetype supported in libcore.net.MimeUtils
+PRODUCT_COPY_FILES += \
+    vendor/XPe/prebuilt/common/lib/content-types.properties:system/lib/content-types.properties
+
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
@@ -168,15 +172,16 @@ PRODUCT_PACKAGES += \
 # Custom CM packages
 PRODUCT_PACKAGES += \
     AudioFX \
-    CMFileManager \
-    CMHome \
     CMWallpapers \
+    CMFileManager \
+    CMAccount \
+    CMHome \
+    CMSettingsProvider
     Eleven \
     Launcher3 \
     LockClock \
     Trebuchet \
     XPerienceCenter
-#   XPerienceSetupWizard <--Work in progress
 
 # CM Platform Library
 PRODUCT_PACKAGES += \
@@ -252,10 +257,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 -include vendor/XPe/xperienced.mk
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/XPe/overlay/common
-
-PRODUCT_VERSION_MAJOR = 10
-PRODUCT_VERSION_MINOR = 0
-PRODUCT_VERSION_MAINTENANCE = 0_beta1
 
 # Set XPE_BUILDTYPE from the env RELEASE_TYPE, for jenkins compat
 
@@ -363,7 +364,7 @@ ifndef CM_PLATFORM_SDK_VERSION
   # the SDK are released.  It should only be incremented when the APIs for
   # the new release are frozen (so that developers don't write apps against
   # intermediate builds).
-  CM_PLATFORM_SDK_VERSION := 2
+  CM_PLATFORM_SDK_VERSION := 4
 endif
 
 ifndef CM_PLATFORM_REV
