@@ -27,7 +27,7 @@ Maintainers (CyanogenMod 12.1):
 * __HTC Droid DNA:__ crpalmer, invisiblek
 * __HTC Droid Incredible 4G LTE:__ intervigil, mdmower
 * __HTC Evo 4G LTE:__ kushdeck, toastcfh
-* __HTC One (GSM):__ codeworkx, h8rift
+* __HTC One (GSM):__ h8rift
 * __HTC One M8:__ deck, h8rift, invisblek, toastcfh, u-ra, uberlaggydarwin
 * __HTC One M8 Dual SIM (m8dug):__ bgcngm
 * __HTC One M9 (hima):__ cyanogen, Rashed97, varunchitre15
@@ -49,11 +49,14 @@ Maintainers (CyanogenMod 12.1):
 * __LG G3 (Canada) (D852):__ AndroidUser00110001
 * __LG G3 (International) (D855):__ AngelBob
 * __LG G3 (Verizon) (VS985):__ invisiblek
+* __LG G4 (T-Mobile) (H811):__ codeworkx, genesixxbf3
+* __LG G4 (International) (H815):__ codeworkx, genesixxbf3
 * __LG Optimus LTE (P930) / LG Nitro HD {P935):__ arcee
 * __LG Optimus LTE (SK Telecom) (SU640):__ arcee
 * __Moto E 2014 (xt1021,xt1022,xt1023/condor):__ percy_g2, scritch007, ashwin007
 * __Moto G 2014 (xt1063,xt1064,xt1068,xt1069/titan):__ LuK1337, luca020400
 * __Moto G 4G (xt1039,xt1040,xt1042,xt1045/peregrine):__ somcom3x, intervigil
+* __Moto G 4G 2014 (xt1072,xt1077,xt1078,xt1079/thea):__ LuK1337, luca020400
 * __Moto X (xt1053,xt1055,xt1056,xt1058,xt1060/ghost):__ Hashcode, Skrilax_CZ
 * __Moto X 2014 (victara):__ crpalmer, invisiblek
 * __Motorola Moto MAXX(quark) :__ Skrilax_CZ
@@ -76,6 +79,8 @@ Maintainers (CyanogenMod 12.1):
 * __Oppo Find 5:__ intervigil, nebkat
 * __Oppo Find 7:__ intervigil, tdm, inwotep, mikeioannina
 * __Oppo N3:__ invisiblek, maniac103
+* __Oppo R7:__ maniac103, mikeioannina, Rashed97
+* __Oppo R7 Plus:__ maniac103, mikeioannina, Rashed97
 * __Samsung Captivate (SGH-I896 / SGH-I897):__ pawitp
 * __Samsung Epic 4G (SPH-D700):__ bbelos
 * __Samsung Exhilarate (SGH-I577):__ mikeyman77, carvsdriver
@@ -97,7 +102,7 @@ Maintainers (CyanogenMod 12.1):
 * __Samsung Galaxy S (GT-I9000):__ pawitp
 * __Samsung Galaxy S (GT-I9000B):__ helvio88
 * __Samsung Galaxy S II (GT-I9100):__ Caio Schnepper
-* __Samsung Galaxy S II (intl) (GT-I9100G):__ codeworkx, Jiangyi, Ryuinferno
+* __Samsung Galaxy S II (intl) (GT-I9100G):__ Jiangyi, Ryuinferno
 * __Samsung Galaxy S II (T-Mobile) (SGH-T989):__ mikeyman77
 * __Samsung Galaxy S II (AT&T) (SGH-I727):__ topprospect
 * __Samsung Galaxy S III (AT&T) (SGH-I747):__ nardholio
@@ -117,22 +122,23 @@ Maintainers (CyanogenMod 12.1):
 * __Samsung Galaxy S V (Vodafone) (SM-G900I):__ Regi24
 * __Samsung Galaxy Tab 7" (GSM):__ cdesai, humberos
 * __Samsung Galaxy Tab 7" (CDMA):__ jt1134
-* __Samsung Galaxy Tab 2 7" (GT-P31xx):__ codeworkx, codyf86
+* __Samsung Galaxy Tab 2 7" (GT-P31xx):__ codyf86
 * __Samsung Galaxy Tab 2 10.1" (GT-P51xx):__ codyf86
 * __Samsung Galaxy Tab Pro 8.4" (SM-T320):__ crpalmer
+* __Samsung Galaxy Tab S 8.4" (SM-T700):__ deadman96385
 * __Samsung Vibrant (SGH-T959):__ FaultException
 * __Sony Xperia E3  (flamingo):__ FreeXperia Team
-* __Sony Xperia L (taoshan):__ varunchitre15, FreeXperia Team
+* __Sony Xperia L (taoshan):__ olivieer, FreeXperia Team
 * __Sony Xperia M (nicki):__ RonG, FreeXperia Team
 * __Sony Xperia M2 (eagle):__ FreeXperia Team
-* __Sony Xperia SP (huashan):__ FreeXperia Team, uberlaggydarwin, Mrcl1450
+* __Sony Xperia SP (huashan):__ FreeXperia Team, uberlaggydarwin, Mrcl1450, AdrianDC
 * __Sony Xperia T (mint):__ FreeXperia Team, tilal6991, uberlaggydarwin
 * __Sony Xperia T2 Ultra  (tianchi):__ FreeXperia Team
 * __Sony Xperia T3  (seagull):__ FreeXperia Team
 * __Sony Xperia V (tsubasa):__ FreeXperia Team, tilal6991, championswimmer, uberlaggydarwin
-* __Sony Xperia Z (yuga):__ FreeXperia Team, championswimmer, Turl
-* __Sony Xperia ZL (odin):__  FreeXperia Team, championswimmer
-* __Sony Xperia ZR (dogo):__  FreeXperia Team, championswimmer
+* __Sony Xperia Z (yuga):__ FreeXperia Team, Turl, olivieer
+* __Sony Xperia ZL (odin):__  FreeXperia Team, olivieer
+* __Sony Xperia ZR (dogo):__  FreeXperia Team
 * __Sony Xperia Tablet Z LTE (pollux):__ FreeXperia Team, snc
 * __Sony Xperia Tablet Z WiFi (pollux_windy):__ FreeXperia Team, snc
 * __Sony Xperia Tablet Z2 LTE (castor):__ FreeXperia Team

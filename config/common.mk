@@ -111,6 +111,10 @@ vendor/XPe/prebuilt/chromium/libwebviewchromium_plat_support.so:system/lib/libwe
 PRODUCT_COPY_FILES += \
     vendor/XPe/prebuilt/common/etc/hosts:system/etc/hosts
 
+# Copy over added mimetype supported in libcore.net.MimeUtils
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/lib/content-types.properties:system/lib/content-types.properties
+
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
@@ -165,6 +169,7 @@ PRODUCT_PACKAGES += \
     CMFileManager \
     CMHome \
     CMWallpapers \
+    CMSettingsProvider \
     Eleven \
     Launcher3 \
     LockClock \
@@ -194,9 +199,6 @@ PRODUCT_PACKAGES += \
     htop \
     powertop \
     lsof \
-    mount.exfat \
-    fsck.exfat \
-    mkfs.exfat \
     mkfs.f2fs \
     fsck.f2fs \
     fibmap.f2fs \
@@ -207,6 +209,15 @@ PRODUCT_PACKAGES += \
     oprofiled \
     sqlite3 \
     strace
+
+WITH_EXFAT ?= true
+ifeq ($(WITH_EXFAT),true)
+TARGET_USES_EXFAT := true
+PRODUCT_PACKAGES += \
+    mount.exfat \
+    fsck.exfat \
+    mkfs.exfat
+endif
 
 # Openssh
 PRODUCT_PACKAGES += \
@@ -249,7 +260,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/XPe/overlay/common
 
 PRODUCT_VERSION_MAJOR = 9
 PRODUCT_VERSION_MINOR = 1
-PRODUCT_VERSION_MAINTENANCE = 1_r18
+PRODUCT_VERSION_MAINTENANCE = MAINLINE
 
 # Set CM_BUILDTYPE from the env RELEASE_TYPE, for jenkins compat
 
@@ -322,7 +333,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.xpe.releasetype=$(CM_BUILDTYPE) \
   ro.modversion=$(CM_VERSION) \
   ro.xpe.model=$(CM_BUILD) \
-  ro.cmlegal.url=http://xpe.cynd.gq/privacy.html
+  ro.cmlegal.url=http://xpe.esy.es/privacy.html
 
 -include vendor/XPe-priv/keys/keys.mk
 
@@ -342,7 +353,7 @@ ifneq ($(PRODUCT_DEFAULT_DEV_CERTIFICATE),build/target/product/security/testkey)
     else
       TARGET_VENDOR_RELEASE_BUILD_ID := $(TARGET_VENDOR_RELEASE_BUILD_ID)
     endif
-    CM_DISPLAY_VERSION=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(TARGET_VENDOR_RELEASE_BUILD_ID)
+    CM_DISPLAY_VERSION=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)$(PRODUCT_VERSION_DEVICE_SPECIFIC)-$(TARGET_VENDOR_RELEASE_BUILD_ID)
   endif
 endif
 endif
@@ -357,7 +368,7 @@ ifndef CM_PLATFORM_SDK_VERSION
   # the SDK are released.  It should only be incremented when the APIs for
   # the new release are frozen (so that developers don't write apps against
   # intermediate builds).
-  CM_PLATFORM_SDK_VERSION := 2
+  CM_PLATFORM_SDK_VERSION := 3
 endif
 
 ifndef CM_PLATFORM_REV
