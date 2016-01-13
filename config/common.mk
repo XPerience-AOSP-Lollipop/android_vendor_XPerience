@@ -174,8 +174,8 @@ PRODUCT_PACKAGES += \
     Launcher3 \
     LockClock \
     Trebuchet \
-    XPerienceCenter
-#   XPerienceSetupWizard <--Work in progress
+    XPerienceCenter \
+    XPerienceSetupWizard
 
 # CM Platform Library
 PRODUCT_PACKAGES += \
@@ -260,7 +260,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/XPe/overlay/common
 
 PRODUCT_VERSION_MAJOR = 9
 PRODUCT_VERSION_MINOR = 1
-PRODUCT_VERSION_MAINTENANCE = MAINLINE
+PRODUCT_VERSION_MAINTENANCE = 1_r33
 
 # Set CM_BUILDTYPE from the env RELEASE_TYPE, for jenkins compat
 
