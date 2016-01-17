@@ -30,4 +30,6 @@
 
     <!-- Default for Settings.Secure.STATS_COLLECTION. -->
     <bool name="def_cm_stats_collection">true</bool>
+    <!--Add status bar network traffic to all-->
+    <integer name="values_status_bar_network_traffic_style">3</integer>
 </resources>
