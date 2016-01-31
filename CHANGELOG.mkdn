@@ -1,19 +1,15 @@
 XPERIENCE 
 =========
 
-10.0
-[*] Android 6.0
-[*] CM security patches
-[*] Caf patches
-[*] some old features
-
-9.1.0_r3
-[*] Bump to google 5.1.0_r3
-[*] active display
-[*] Fix ram manager problems
-[*] Fix leaks
-[*] Fix bugs
-[*] Alot of patches from CM-12.1
+9.1.1_r33
+[*] Bump to Android 5.1.1_r33
+[*] Add Custom Headers
+[*] Reduce risk of memory corruption due to finalization
+[*] Add official support to Moto x aka Ghost
+[*] base: display headset when plug
+[*] a lot of CM patches
+[*] CAF Patches
+[*] 
 
 9.0.2_r1
 [*] Bump to Android 5.0.2_r1
