@@ -1,6 +1,13 @@
 XPERIENCE 
 =========
 
+9.1.1_r34
+[*] Bump to android 5.1.1_r34
+[*] Removed Whispersystem
+[*] Updates on AppOPs
+[*] Root acces activated by default
+
+
 9.1.1_r33
 [*] Bump to Android 5.1.1_r33
 [*] Add Custom Headers
@@ -9,7 +16,6 @@ XPERIENCE
 [*] base: display headset when plug
 [*] a lot of CM patches
 [*] CAF Patches
-[*] 
 
 9.0.2_r1
 [*] Bump to Android 5.0.2_r1

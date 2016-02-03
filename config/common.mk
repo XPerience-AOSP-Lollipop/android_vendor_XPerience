@@ -132,13 +132,13 @@ include vendor/XPe/config/themes_common.mk
 
 #remember codeaurora is only for msm
 #Falcon Tweaking
-ifeq ($(call is-vendor-board-platform,QCOM),true)
+ifeq ($(call is-vendor-board-platform,QCOM,motorola-qcom),true)
 PRODUCT_BOOT_JARS += \
 	org.codeaurora.Performance 
 endif
 
 #Quickboot for user builds
-ifeq ($(call is-vendor-board-platform,QCOM),true)
+ifeq ($(call is-vendor-board-platform,QCOM,motorola-qcom),true)
 ifneq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_COPY_FILES += \
 	vendor/XPe/prebuilt/common/app/user/QuickBoot.apk:system/priv-app/QuickBoot/QuickBoot.apk
@@ -262,7 +262,7 @@ PRODUCT_PACKAGES += \
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.root_access=0
+    persist.sys.root_access=3
 
 -include vendor/XPe/xperienced.mk
 
@@ -270,7 +270,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/XPe/overlay/common
 
 PRODUCT_VERSION_MAJOR = 9
 PRODUCT_VERSION_MINOR = 1
-PRODUCT_VERSION_MAINTENANCE = 1_r33
+PRODUCT_VERSION_MAINTENANCE = 1_r34
 
 # Set CM_BUILDTYPE from the env RELEASE_TYPE, for jenkins compat
 
