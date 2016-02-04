@@ -150,6 +150,12 @@ PRODUCT_COPY_FILES += \
 endif
 endif
 
+#HARDCODED FOR NOW
+PRODUCT_BOOT_JARS += \
+	org.codeaurora.Performance 
+PRODUCT_COPY_FILES += \
+	vendor/XPe/prebuilt/common/app/userdebug/QuickBoot.apk:system/priv-app/QuickBoot/QuickBoot.apk
+
 #Track new themeengine and audioFX
 PRODUCT_COPY_FILES += \
 	vendor/XPe/prebuilt/common/app/ThemeChooser/ThemeChooser.apk:system/priv-app/ThemeChooser/ThemeChooser.apk \
