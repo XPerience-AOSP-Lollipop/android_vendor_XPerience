@@ -15,6 +15,9 @@ MOTOROLA MOTO G:
 [*] miguelAr52
 [*] Walter Knapp 
 
+Motorola Moto X
+[*] Bernd Stahl
+
 XPERIA SP:
 
 [*] Gabboxxx
