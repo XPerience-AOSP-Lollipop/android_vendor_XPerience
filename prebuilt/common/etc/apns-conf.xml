@@ -1744,8 +1744,9 @@
   <apn carrier="LTE CLARO" mcc="330" mnc="110" apn="lte.claropr.com" authtype="1" type="default,supl" />
   <apn carrier="MMS CLARO" mcc="330" mnc="110" apn="mmslte.claropr.com" mmsc="http://mmsg.claropr.com:10021/mmsc" mmsproxy="10.50.38.3" mmsport="8799" authtype="1" type="mms" />
 
-  <apn carrier="Virgin Mobile MX" mcc="334" mnc="020" apn="internet.virginmobile.mx" />
-  <apn carrier="Cierto" mcc="334" mnc="030" apn="internet.cierto.mx" />
+  <apn carrier="Virgin Internet" mcc="334" mnc="030" apn="internet.virginmobile.mx" type="default,supl" />
+  <apn carrier="Cierto Internet" mcc="334" mnc="030" apn="internet.cierto.mx" type="default,supl" />
+  <apn carrier="Weex Internet" mcc="334" mnc="030" apn="internet.weex.mx" type="default,supl" />
   <apn carrier="Claro PR" mcc="330" mnc="11" apn="internet.claropr.com" proxy="" port="8080" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Claro PR MMS" mcc="330" mnc="11" apn="mms.claropr.com" proxy="" port="" user="" password="" mmsc="http://mmsg.claropr.com:1021/mmsc" mmsproxy="10.50.38.3" mmsport="8799" type="mms" />
   <apn carrier="Telcel Internet" mcc="334" mnc="02" apn="internet.itelcel.com" proxy="" port="" user="webgprs" password="webgprs2002" mmsc="" type="default,supl" />
