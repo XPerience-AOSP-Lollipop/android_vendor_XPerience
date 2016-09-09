@@ -32,17 +32,6 @@ else
 : ${THREADS:="$(cat /proc/cpuinfo | grep "^processor" | wc -l)"}
 fi
 
-# If there is more than one jdk installed, use latest 6.x
-# only if this are linux
-if [ `uname -s` == "linux" ]; then
-if [ "`update-alternatives --list javac | wc -l`" -gt 1 ]; then
-        JDK6=$(dirname `update-alternatives --list javac | grep "\-6\-"` | tail -n1)
-        JRE6=$(dirname ${JDK6}/../jre/bin/java)
-        export PATH=${JDK6}:${JRE6}:$PATH
-fi
-fi
-JVER=$(javac -version  2>&1 | head -n1 | cut -f2 -d' ')
-
 # Import command line parameters
 DEVICE="$1"
 
