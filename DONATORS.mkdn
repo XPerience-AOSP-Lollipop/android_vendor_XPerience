@@ -5,7 +5,7 @@ DONATORS:
 
 "Thank you so much for help"
 
-MOTOROLA MOTO G:
+MOTOROLA MOTO G1st GEN:
 
 [*] Lee Mulligan [lmulli]
 [*] JAPOINA92
@@ -15,11 +15,19 @@ MOTOROLA MOTO G:
 [*] miguelAr52
 [*] Walter Knapp 
 [*] celikbasm
+[*] Alessandro Sarri
+[*] Walter Knapp Thanks again :)
 
-Motorola Moto X
+Motorola Moto X1st GEN
 [*] Bernd Stahl
 [*] Salem Strange
 [*] Scott Crosson
+[*] Jose Antonio Castro Gonzalez
+[*] televisiontv ---Big thanks :D---
+[*] Warren_Orange
+[*] sharukins
+[*] _Morfic_
+[*] TroyG
 
 XPERIA SP:
 
@@ -29,3 +37,6 @@ Nexus 7:
 
 [*] Craig Moyle
 [*] Ткалун Сергей
+
+Unknown device.
+[*] Rodrigo Caliman
