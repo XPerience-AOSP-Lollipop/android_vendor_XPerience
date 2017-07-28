@@ -17,6 +17,16 @@ copy_file() {
   fi
 }
 
+copy_file() {
+  cp -dp "$1" "$2"
+  # symlinks don't have a context
+  if [ ! -L "$1" ]; then
+    # it is assumed that every label starts with 'u:object_r' and has no white-spaces
+    local context=`ls -Z "$1" | grep -o 'u:object_r:[^ ]*' | head -1`
+    chcon "$context" "$2"
+  fi
+}
+
 backup_file() {
   if [ -e "$1" -o -L "$1" ]; then
     local F=`basename "$1"`
