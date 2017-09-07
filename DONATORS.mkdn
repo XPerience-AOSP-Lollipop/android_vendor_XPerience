@@ -43,6 +43,7 @@ Moto Z Play
 [*] Michael Flynn
 [*] DroneDoom
 [*] Angel Ortiz
+[*] davtse
 
 Moto G4/Plus
 [*] Jesus Alfredo Espinosa Sanchez
