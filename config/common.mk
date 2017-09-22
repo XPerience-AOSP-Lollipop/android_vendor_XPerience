@@ -410,7 +410,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.xpe.channeltype=$(XPERIENCE_CHANNEL) \
     ro.modversion=$(XPE_VERSION) \
     ro.xpe.model=$(XPE_BUILD) \
-    ro.xpe.codename=Aioros \
+    ro.xpe.codename=Camaxtli \
     ro.xpe.cafbranch=LA.UM.5.8.r1-02200-8x98.0 \
     ro.xpelegal.url=http://thexperienceproject.com/legal/
 
